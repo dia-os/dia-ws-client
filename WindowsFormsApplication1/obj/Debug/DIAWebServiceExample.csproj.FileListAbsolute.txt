@@ -38,3 +38,16 @@ C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\WebMatrix.
 C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\WebMatrix.WebData.xml
 C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Semih\Desktop\git_ws-client\dia-ws-client\WindowsFormsApplication1\bin\Debug\DIAWebServerExample.exe.config
+C:\Users\Semih\Desktop\git_ws-client\dia-ws-client\WindowsFormsApplication1\obj\Debug\DIAWebServerExample.exe
+C:\Users\Semih\Desktop\git_ws-client\dia-ws-client\WindowsFormsApplication1\obj\Debug\DIAWebServerExample.pdb
+C:\Users\Semih\Desktop\git_ws-client\dia-ws-client\WindowsFormsApplication1\obj\Debug\DIAWebServiceExample.csprojResolveAssemblyReference.cache
+C:\Users\Semih\Desktop\git_ws-client\dia-ws-client\WindowsFormsApplication1\obj\Debug\DIAWebServerExample.Form_CariKart.resources
+C:\Users\Semih\Desktop\git_ws-client\dia-ws-client\WindowsFormsApplication1\obj\Debug\DIAWebServerExample.Form_CariKartListesi.resources
+C:\Users\Semih\Desktop\git_ws-client\dia-ws-client\WindowsFormsApplication1\obj\Debug\DIAWebServerExample.Form_Login.resources
+C:\Users\Semih\Desktop\git_ws-client\dia-ws-client\WindowsFormsApplication1\obj\Debug\DIAWebServerExample.Properties.Resources.resources
+C:\Users\Semih\Desktop\git_ws-client\dia-ws-client\WindowsFormsApplication1\obj\Debug\DIAWebServiceExample.csproj.GenerateResource.Cache
+C:\Users\Semih\Desktop\git_ws-client\dia-ws-client\WindowsFormsApplication1\bin\Debug\DIAWebServerExample.exe
+C:\Users\Semih\Desktop\git_ws-client\dia-ws-client\WindowsFormsApplication1\bin\Debug\DIAWebServerExample.pdb
+C:\Users\Semih\Desktop\git_ws-client\dia-ws-client\WindowsFormsApplication1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Semih\Desktop\git_ws-client\dia-ws-client\WindowsFormsApplication1\bin\Debug\Newtonsoft.Json.xml
