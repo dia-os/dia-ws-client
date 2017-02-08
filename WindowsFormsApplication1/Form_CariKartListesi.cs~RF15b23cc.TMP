@@ -1,0 +1,185 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApplication1
+{
+    public partial class form_CariKartListesi : Form
+    {
+        public form_CariKartListesi()
+        {
+            InitializeComponent();
+
+            System.Console.WriteLine("Buraya bak. combo cagirmadan once");
+
+            string code = initiliazeFirmaResp();
+            if(code != "200")
+            {
+                System.Windows.Forms.MessageBox.Show("Firmalar çekilirken bir hata oluştu.\n"
+                    + "Lütfen programı kapatıp tekrar çalıştırmayı deneyiniz."
+                    );
+            }
+
+            initiliazeFirmalarComboBoxu();
+
+            System.Console.WriteLine("Buraya bak. combo cagirdiktan sonra");
+        }
+
+        private void initiliazeFirmalarComboBoxu()
+        {
+            string[] firmaAdlari = Sabitler.firmaAdlariniGetir();
+
+            if(firmaAdlari != null)
+            {
+                cmb_Firma.Items.AddRange(firmaAdlari);
+            }
+        }
+
+        private string initiliazeFirmaResp()
+        {
+            try
+            {
+                SisService.sis_yetkili_firma_donem_sube_depo req_firma = new SisService.sis_yetkili_firma_donem_sube_depo();
+                req_firma.session_id = Sabitler.session_id;
+
+                Console.WriteLine("SessionId: " + Sabitler.session_id);
+
+                SisService.dia_sis_v3_soap_appClient client = new SisService.dia_sis_v3_soap_appClient();
+                SisService.sis_yetkili_firma_donem_sube_depo_resp resp_firma = client.sis_yetkili_firma_donem_sube_depo(req_firma);
+                if(resp_firma.sis_yetkili_firma_donem_sube_depo_rslt.code == "200")
+                {
+                    Sabitler.resp_firma = resp_firma.sis_yetkili_firma_donem_sube_depo_rslt.result;
+                }
+
+                return resp_firma.sis_yetkili_firma_donem_sube_depo_rslt.code;               
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Bir hata alındı.");
+                System.Console.WriteLine(e.ToString());
+            }
+
+            return "";
+        }
+
+        private void btn_Kapat_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(1);
+        }
+
+        private void cmb_Firma_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Firmada secilen index degistiginde donemler combosu da degismeli
+
+            Console.WriteLine("cmb_firma_selectedIndexChanged()");
+
+            string firmaAdi = cmb_Firma.Text;
+            
+
+            Console.WriteLine("firmaAdi: " + firmaAdi);
+            int index = Sabitler.firmaIndexiBul(firmaAdi);
+
+            Console.WriteLine("Index: " + index);
+
+            List<Dictionary<string, string>> donemler = Sabitler.firmaDonemleriGetir(index);
+
+            if(donemler != null)
+            {
+                string[] cmb_donemler_txt = new string[donemler.Count];
+
+                for (int i = 0; i < donemler.Count; i++)
+                {
+                    cmb_donemler_txt[i] = donemler[i]["gorunendonemkodu"]
+                        + "   " + donemler[i]["baslangictarihi"]
+                        + "   " + donemler[i]["bitistarihi"];
+                }
+
+                cmb_Donem.Items.Clear();
+                cmb_Donem.ResetText();
+                cmb_Donem.Items.AddRange(cmb_donemler_txt);
+            }
+        }
+
+        private void btn_Getir_Click(object sender, EventArgs e)
+        {
+            // Firma ve donem secilmeli
+            if (cmb_Firma.Text == "")
+            {
+                System.Windows.Forms.MessageBox.Show("Lütfen firma seçiniz.");
+                return;
+            }
+            if (cmb_Donem.Text == "")
+            {
+                System.Windows.Forms.MessageBox.Show("Lütfen dönem seçiniz.");
+                return;
+            }
+
+            int firmaIndex = Sabitler.firmaIndexiBul(cmb_Firma.Text);
+            int firmaKodu = Sabitler.firmaKoduGetir(firmaIndex);
+            int donemKodu = Sabitler.donemKoduGetir(firmaIndex, cmb_Donem.Text);
+
+            if (firmaKodu == -1 || donemKodu == -1)
+            {
+                System.Console.WriteLine("Firma kodu yada dönem kodu hatalı! FirmaKodu: " + firmaKodu + " DonemKodu: " + donemKodu);
+            }
+
+            ScfService.scf_carikart_listele_resp resp = service_cari_listele(firmaKodu, donemKodu);
+
+            if(resp != null && resp.scf_carikart_listele_rslt.code == "200")
+            {
+                Sabitler.resp_CariList = resp.scf_carikart_listele_rslt.result;
+                cariKartlariListele();
+            }
+            else
+            {
+                System.Windows.Forms.MessageBox.Show("CariKartları listelemeye çalışırken bir hata oluştu.");
+            }
+
+        }
+
+        private ScfService.scf_carikart_listele_resp service_cari_listele(int firmaKodu, int donemKodu)
+        {
+
+            try
+            {
+                ScfService.dia_scf_v3_soap_appClient client = new ScfService.dia_scf_v3_soap_appClient();
+
+                ScfService.scf_carikart_listele req_carikart_listele = new ScfService.scf_carikart_listele();
+                req_carikart_listele.donem_kodu = (short)donemKodu;
+                req_carikart_listele.firma_kodu = (short)firmaKodu;
+                req_carikart_listele.session_id = Sabitler.session_id;
+
+                ScfService.scf_carikart_listele_resp resp = client.scf_carikart_listele(req_carikart_listele);
+
+                return resp;
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+
+            return null;
+        }
+
+        private void cariKartlariListele()
+        {
+            //gbx_CariListe.Columns.Clear();
+            Console.WriteLine("ToString: " + gbx_CariListe.Columns[0].ToString());
+            Console.WriteLine("Tag " + gbx_CariListe.Columns[0].Tag);
+            Console.WriteLine("ToString: " + gbx_CariListe.Columns[1].ToString());
+            Console.WriteLine("Tag " + gbx_CariListe.Columns[1].Tag);
+
+            Console.WriteLine("Item: " + Sabitler.resp_CariList[0].ToString());
+            for(int i = 0; i < Sabitler.resp_CariList.Length; i++)
+            {
+
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+C:\Users\Semih\Documents\Visual Studio 2015\Projects\WS-Dia\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Semih\Documents\Visual Studio 2015\Projects\WS-Dia\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Semih\Documents\Visual Studio 2015\Projects\WS-Dia\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Semih\Documents\Visual Studio 2015\Projects\WS-Dia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Semih\Documents\Visual Studio 2015\Projects\WS-Dia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Semih\Documents\Visual Studio 2015\Projects\WS-Dia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Semih\Documents\Visual Studio 2015\Projects\WS-Dia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Semih\Documents\Visual Studio 2015\Projects\WS-Dia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Semih\Documents\Visual Studio 2015\Projects\WS-Dia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.form_CariKartListesi.resources
+C:\Users\Semih\Documents\Visual Studio 2015\Projects\WS-Dia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form_Login.resources
+C:\Users\Semih\Documents\Visual Studio 2015\Projects\WS-Dia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form_CariKart.resources
+C:\Users\Semih\Documents\Visual Studio 2015\Projects\WS-Dia\WindowsFormsApplication1\bin\Debug\DIAWebServerExample.exe.config

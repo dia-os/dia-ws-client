@@ -1,0 +1,40 @@
+C:\Users\Semih\Documents\Visual Studio 2015\Projects\WS-Dia\WindowsFormsApplication1\obj\Debug\DIAWebServiceExample.csprojResolveAssemblyReference.cache
+C:\Users\Semih\Documents\Visual Studio 2015\Projects\WS-Dia\WindowsFormsApplication1\obj\Debug\DIAWebServerExample.Properties.Resources.resources
+C:\Users\Semih\Documents\Visual Studio 2015\Projects\WS-Dia\WindowsFormsApplication1\obj\Debug\DIAWebServiceExample.csproj.GenerateResource.Cache
+C:\Users\Semih\Documents\Visual Studio 2015\Projects\WS-Dia\WindowsFormsApplication1\bin\Debug\DIAWebServerExample.exe.config
+C:\Users\Semih\Documents\Visual Studio 2015\Projects\WS-Dia\WindowsFormsApplication1\bin\Debug\DIAWebServerExample.exe
+C:\Users\Semih\Documents\Visual Studio 2015\Projects\WS-Dia\WindowsFormsApplication1\bin\Debug\DIAWebServerExample.pdb
+C:\Users\Semih\Documents\Visual Studio 2015\Projects\WS-Dia\WindowsFormsApplication1\obj\Debug\DIAWebServerExample.Form_CariKart.resources
+C:\Users\Semih\Documents\Visual Studio 2015\Projects\WS-Dia\WindowsFormsApplication1\obj\Debug\DIAWebServerExample.Form_CariKartListesi.resources
+C:\Users\Semih\Documents\Visual Studio 2015\Projects\WS-Dia\WindowsFormsApplication1\obj\Debug\DIAWebServerExample.Form_Login.resources
+C:\Users\Semih\Documents\Visual Studio 2015\Projects\WS-Dia\WindowsFormsApplication1\obj\Debug\DIAWebServerExample.exe
+C:\Users\Semih\Documents\Visual Studio 2015\Projects\WS-Dia\WindowsFormsApplication1\obj\Debug\DIAWebServerExample.pdb
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\DIAWebServerExample.exe.config
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\obj\Debug\DIAWebServerExample.exe
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\obj\Debug\DIAWebServerExample.pdb
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\obj\Debug\DIAWebServiceExample.csprojResolveAssemblyReference.cache
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\obj\Debug\DIAWebServerExample.Form_CariKart.resources
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\obj\Debug\DIAWebServerExample.Form_CariKartListesi.resources
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\obj\Debug\DIAWebServerExample.Form_Login.resources
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\obj\Debug\DIAWebServerExample.Properties.Resources.resources
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\obj\Debug\DIAWebServiceExample.csproj.GenerateResource.Cache
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\DIAWebServerExample.exe
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\DIAWebServerExample.pdb
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\Microsoft.Web.Helpers.dll
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\System.Web.Helpers.dll
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\System.Web.Razor.dll
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\System.Web.WebPages.dll
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\WebMatrix.Data.dll
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\WebMatrix.WebData.dll
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\System.Web.Helpers.xml
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\System.Web.Razor.xml
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\System.Web.WebPages.xml
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\WebMatrix.Data.xml
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\WebMatrix.WebData.xml
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Semih\Desktop\WS_DIA_JSON\WindowsFormsApplication1\bin\Debug\Newtonsoft.Json.xml
